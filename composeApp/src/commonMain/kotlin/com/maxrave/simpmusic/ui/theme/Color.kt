@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
  * Brand seed color. The whole Material 3 ColorScheme is generated from this
  * color at runtime — see [AppTheme].
  */
-val seed = Color(0xFF8ECAE6)
+val seed = Color(0xFF2563EB)
 
 // ===== Semantic colors (not derivable from the color scheme) =====
 
@@ -33,9 +33,9 @@ val blackMoreOverlay = Color(0x8f242424)
 // step one shade back towards the middle so they read as raised. The light panel is not here —
 // it comes from colorScheme.surfaceContainer, which already sits at the right distance.
 
-val desktopWindowDark = Color(0xFF000000)
+val desktopWindowDark = Color(0xFF050816)
 val desktopWindowLight = Color(0xFFFFFFFF)
-val desktopPanelDark = Color(0xFF121212)
+val desktopPanelDark = Color(0xFF0B1226)
 
 // ===== Desktop window controls =====
 // The macOS traffic lights. Fixed by convention rather than by theme — users read these by
