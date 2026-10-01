@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'dev'
+      - 'rimmusic-v2'
     paths-ignore:
       - 'README.md'
       - 'fastlane/**'
