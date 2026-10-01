@@ -148,7 +148,29 @@ fun AppTheme(
                 isDark = isDark,
                 isAmoled = isDark,
                 style = PaletteStyle.TonalSpot,
-                modifyColorScheme = { cs -> if (isDark) cs else cs.withNeutralLightSurfaces() },
+                modifyColorScheme = { cs ->
+                        if (isDark) {
+                            cs.copy(
+                                background = Color(0xFF050816),
+                                onBackground = Color(0xFFF4F7FF),
+                                surface = Color(0xFF070B16),
+                                onSurface = Color(0xFFF4F7FF),
+                                surfaceVariant = Color(0xFF151D32),
+                                onSurfaceVariant = Color(0xFFB8C4DE),
+                                surfaceContainerLowest = Color(0xFF03050C),
+                                surfaceContainerLow = Color(0xFF080D1A),
+                                surfaceContainer = Color(0xFF0B1226),
+                                surfaceContainerHigh = Color(0xFF111A32),
+                                surfaceContainerHighest = Color(0xFF17213D),
+                                outline = Color(0xFF465574),
+                                outlineVariant = Color(0xFF26324D),
+                                inverseSurface = Color(0xFFE8EEFF),
+                                inverseOnSurface = Color(0xFF101522),
+                            )
+                        } else {
+                            cs.withNeutralLightSurfaces()
+                        }
+                    },
             )
     // Immersive screens stay dark even at light theme (see [ForceDarkContent]). Resolve their scheme
     // once here instead of letting every such subtree build a palette of its own.
